@@ -1,0 +1,1672 @@
+2025-05-16 10:42:44,542 - INFO - Syncing started with account id: 1632040980684380
+2025-05-16 10:43:25,557 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-16 10:43:27,067 - INFO - image_hashes deleted from s3: d1185bd326cc6dc8fd29deceb010fcc0,e529ecc6c4870232c83a09fac6a2354a,49411a557ad0fac409975871ec5672c5,8bbbc22fd0fac92f10344faae712953d,8f7e8ed8f328b0481b53e4e836eb748d
+2025-05-16 10:43:27,082 - INFO - ==>>  Image row deleted from the database:: 49411a557ad0fac409975871ec5672c5,d1185bd326cc6dc8fd29deceb010fcc0,8f7e8ed8f328b0481b53e4e836eb748d,e529ecc6c4870232c83a09fac6a2354a,8bbbc22fd0fac92f10344faae712953d
+2025-05-16 10:43:27,087 - INFO - Data Deleted, which was already in the database.
+ Campaign Id 120224957698430251
+2025-05-16 10:44:34,808 - INFO - Collected 99 unique campaigns, 117 unique adsets, 213 unique image assets (hashes) with initial data, 213 total unique image hashes, and 135 unique video assets (IDs).
+2025-05-16 10:57:51,872 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-16 10:57:51,872 - INFO - Updating availability for 89 carousel ads...
+2025-05-16 10:57:51,891 - INFO - Carousel ad availability updated and committed.
+2025-05-16 10:57:51,893 - INFO - Updated cron run status.
+2025-05-16 10:57:52,098 - ERROR - 
+--- Database insertion error for breakdown 'account' ---
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 497, in process_and_insert_insights
+    insert_cursor.executemany(insert_sql, rows_to_insert)
+psycopg2.errors.ForeignKeyViolation: insert or update on table "fact_ad_metrics_aggregated" violates foreign key constraint "fact_ad_metrics_aggregated_ad_id_fkey"
+DETAIL:  Key (ad_id)=(120217380875130251) is not present in table "dim_ad".
+
+
+2025-05-16 10:57:52,099 - INFO -   PostgreSQL Error Code: 23503
+2025-05-16 10:57:52,099 - INFO -   PostgreSQL Error Message: insert or update on table "fact_ad_metrics_aggregated" violates foreign key constraint "fact_ad_metrics_aggregated_ad_id_fkey"
+2025-05-16 10:57:52,099 - INFO -   PostgreSQL Constraint Name: fact_ad_metrics_aggregated_ad_id_fkey
+2025-05-16 10:57:52,099 - INFO - Sync completed for account id: 1632040980684380
+2025-05-16 11:02:46,292 - INFO - Syncing started with account id: 1632040980684380
+2025-05-16 11:03:39,819 - INFO - video_ids deleted from s3: 560345259907640,1274586653779122,441623922291472,599196349294095,986384776865477,1077847260713770,1746570342776184,434929139651744,1048382910374311,977173557552973,1132297188547376,2475887219421442,889937079921268,615433444255864,565878646287723,1108455237036971,377333898775711,1609641849918032,8245241038910346,962331729074763,1116076663234706,1274586653779122,441623922291472,560345259907640,1216513760184091,929170499386911,1216513760184091,929170499386911,488245667405961,631833249248412
+2025-05-16 11:03:43,390 - INFO - image_hashes deleted from s3: 8efdec528b37f5fec6e5ed9bf757076a,8efdec528b37f5fec6e5ed9bf757076a,6f120b456fc1c6dc77e7516538b30bf6,227f70c50e7f29439fb8df2a7ae6357d,5a056801e3a4283613cc333eef0affb6,ca7a42979c9dbb813d21292b5e75d64c,5d80cab4a54dfd4f93756a79a7965d2f,8190e104ad2278aed0ca21c554825856,d39157680a9b36a2e93e5d06a2858919,a9ac98cd9abb89e92cc7912e85088ba9,25447dbbb76fb5795ec3b534a45951e4,816b091b693b56a0c55451b386fd8171,535b55e0ab6775007ffaf995ad3810d5,75fad4459822086d4c3381c819de4349,d6b6f20d963a08d178e07933798d4032,2da60423f8f1bc38088e9969cfeccfc7,c11004d5b04e593f0f6e0b85418b16d7,20f023a1699fc194660d23944f301729,ac96a94f75b1c0c4abac34d61590d3a4
+2025-05-16 11:03:43,445 - INFO - ==>>  Image row deleted from the database:: 5a056801e3a4283613cc333eef0affb6,75fad4459822086d4c3381c819de4349,227f70c50e7f29439fb8df2a7ae6357d,d39157680a9b36a2e93e5d06a2858919,535b55e0ab6775007ffaf995ad3810d5,c11004d5b04e593f0f6e0b85418b16d7,ac96a94f75b1c0c4abac34d61590d3a4,ca7a42979c9dbb813d21292b5e75d64c,8190e104ad2278aed0ca21c554825856,2da60423f8f1bc38088e9969cfeccfc7,20f023a1699fc194660d23944f301729,816b091b693b56a0c55451b386fd8171,5d80cab4a54dfd4f93756a79a7965d2f,6f120b456fc1c6dc77e7516538b30bf6,a9ac98cd9abb89e92cc7912e85088ba9,d6b6f20d963a08d178e07933798d4032,25447dbbb76fb5795ec3b534a45951e4,8efdec528b37f5fec6e5ed9bf757076a
+2025-05-16 11:03:43,450 - INFO - ==>> Video row deleted from the database: 2475887219421442,488245667405961,8245241038910346,599196349294095,441623922291472,1116076663234706,1216513760184091,615433444255864,631833249248412,377333898775711,434929139651744,929170499386911,1048382910374311,1077847260713770,1108455237036971,1132297188547376,1274586653779122,560345259907640,986384776865477,962331729074763,977173557552973,1609641849918032,565878646287723,889937079921268,1746570342776184
+2025-05-16 11:03:43,453 - INFO - Data Deleted, which was already in the database.
+ Campaign Id 120216689711760251,120215447792810251,120216692028650251,120216823666970251,120215409957220251,120215176064660251,120214985663710251,120216831247870251,120214530489710251,120217954955310251,120216692202480251,120215056319320251,120217444539960251,120216054921440251,120214503514690251,120215447891490251,120215639563490251,120215639992450251,120216823856690251,120216692838540251,120214533566380251,120215385524780251,120216692870060251,120216690121580251,120214529182220251,120217951455760251,120215448001750251,120216820892230251,120217376178710251,120215455104400251
+2025-05-16 11:04:44,281 - INFO - Collected 99 unique campaigns, 117 unique adsets, 213 unique image assets (hashes) with initial data, 213 total unique image hashes, and 135 unique video assets (IDs).
+2025-05-16 11:07:07,683 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-16 11:07:07,684 - INFO - Updating availability for 89 carousel ads...
+2025-05-16 11:07:07,704 - INFO - Carousel ad availability updated and committed.
+2025-05-16 11:07:07,705 - INFO - Updated cron run status.
+2025-05-16 11:07:07,946 - INFO - Successfully inserted/updated 821 rows for breakdown 'account'.
+2025-05-16 11:07:07,946 - INFO - Sync completed for account id: 1632040980684380
+2025-05-16 11:20:55,172 - INFO - Syncing started with account id: 1632040980684380
+2025-05-16 11:21:40,657 - INFO - video_ids deleted from s3: 560345259907640,1274586653779122,441623922291472,599196349294095,986384776865477,1077847260713770,1746570342776184,434929139651744,1048382910374311,977173557552973,1132297188547376,2475887219421442,889937079921268,615433444255864,1274586653779122,441623922291472,560345259907640,488245667405961,631833249248412,631833249248412,1216513760184091,1216513760184091,580338254824117,580338254824117,1297077011619690,1151890116720698,1150293196341166
+2025-05-16 11:21:43,735 - INFO - image_hashes deleted from s3: d471c066c6c9c73be12d72f89166bf5f,60343e6929c98f9abd15606d10f7f6be,0fecc40be579423ff951727e4322384e,165c44a2f0d88258c9b747845891d25e,165c44a2f0d88258c9b747845891d25e,9bd163e8d6bfbb9d96b9ec900cd5ea88,9bd163e8d6bfbb9d96b9ec900cd5ea88,0fecc40be579423ff951727e4322384e,0fecc40be579423ff951727e4322384e,b05e35df1e0ac4c2f7e911b7f606ae0b,0996eec2eadbf5e910cfc4283344442f,25447dbbb76fb5795ec3b534a45951e4,c11004d5b04e593f0f6e0b85418b16d7,7819cbfc1e92f9d7b4c63fcd45667ea0,d471c066c6c9c73be12d72f89166bf5f,60343e6929c98f9abd15606d10f7f6be,7819cbfc1e92f9d7b4c63fcd45667ea0,60343e6929c98f9abd15606d10f7f6be,d471c066c6c9c73be12d72f89166bf5f,7819cbfc1e92f9d7b4c63fcd45667ea0,d39157680a9b36a2e93e5d06a2858919,40448e037aad7216cb4546ccb11c2e18,600fa0567dd84cfbe2f5019bdb6a51f3
+2025-05-16 11:21:43,811 - INFO - ==>>  Image row deleted from the database:: 7819cbfc1e92f9d7b4c63fcd45667ea0,40448e037aad7216cb4546ccb11c2e18,165c44a2f0d88258c9b747845891d25e,d471c066c6c9c73be12d72f89166bf5f,60343e6929c98f9abd15606d10f7f6be,25447dbbb76fb5795ec3b534a45951e4,c11004d5b04e593f0f6e0b85418b16d7,0fecc40be579423ff951727e4322384e,b05e35df1e0ac4c2f7e911b7f606ae0b,0996eec2eadbf5e910cfc4283344442f,9bd163e8d6bfbb9d96b9ec900cd5ea88,d39157680a9b36a2e93e5d06a2858919,600fa0567dd84cfbe2f5019bdb6a51f3
+2025-05-16 11:21:43,815 - INFO - ==>> Video row deleted from the database: 2475887219421442,488245667405961,599196349294095,441623922291472,1216513760184091,631833249248412,615433444255864,434929139651744,1048382910374311,1077847260713770,1150293196341166,1132297188547376,1274586653779122,580338254824117,560345259907640,1151890116720698,986384776865477,977173557552973,1297077011619690,889937079921268,1746570342776184
+2025-05-16 11:21:43,819 - INFO - Data Deleted, which was already in the database.
+ Campaign Id 120216689711760251,120215447792810251,120216692028650251,120216823666970251,120217586310730251,120215176064660251,120216688729780251,120217591958640251,120214985663710251,120216831247870251,120217954955310251,120214530489710251,120217582918990251,120216692202480251,120217585154190251,120218078855600251,120217094084000251,120215056319320251,120217444539960251,120216054921440251,120214503514690251,120215447891490251,120215639563490251,120215639992450251,120216823856690251,120217092438530251,120218078311890251,120216692838540251,120214533566380251,120216692870060251,120216690121580251,120214529182220251,120216689487180251,120217951455760251,120215448001750251,120216820892230251,120217376178710251,120215455104400251
+2025-05-16 11:22:47,604 - INFO - Collected 99 unique campaigns, 117 unique adsets, 213 unique image assets (hashes) with initial data, 213 total unique image hashes, and 135 unique video assets (IDs).
+2025-05-16 11:25:45,222 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-16 11:25:45,223 - INFO - Updating availability for 89 carousel ads...
+2025-05-16 11:25:45,242 - INFO - Carousel ad availability updated and committed.
+2025-05-16 11:25:45,243 - INFO - Updated cron run status.
+2025-05-16 11:25:45,488 - INFO - Successfully inserted/updated 821 rows for breakdown 'account'.
+2025-05-16 11:25:45,488 - INFO - Sync completed for account id: 1632040980684380
+2025-05-16 11:50:50,148 - INFO - Syncing started with account id: 1632040980684380
+2025-05-16 11:51:44,137 - INFO - video_ids deleted from s3: 1132297188547376,2475887219421442,889937079921268,615433444255864,565878646287723,1108455237036971,377333898775711,1609641849918032,8245241038910346,962331729074763,1116076663234706,1216513760184091,929170499386911,488245667405961,631833249248412,488245667405961,631833249248412,631833249248412,1216513760184091,1216513760184091,1216513760184091,580338254824117,580338254824117,580338254824117,580338254824117
+2025-05-16 11:51:45,369 - INFO - image_hashes deleted from s3: 0fecc40be579423ff951727e4322384e,60343e6929c98f9abd15606d10f7f6be,0fecc40be579423ff951727e4322384e,d471c066c6c9c73be12d72f89166bf5f,165c44a2f0d88258c9b747845891d25e,165c44a2f0d88258c9b747845891d25e,165c44a2f0d88258c9b747845891d25e,9bd163e8d6bfbb9d96b9ec900cd5ea88,9bd163e8d6bfbb9d96b9ec900cd5ea88,9bd163e8d6bfbb9d96b9ec900cd5ea88,40448e037aad7216cb4546ccb11c2e18,600fa0567dd84cfbe2f5019bdb6a51f3,700ed7972149bade63d5899660daee82,0033c538ff8d24babfbae3d61a206e71,932f6b0089374234ed6d18551bd9b3b4
+2025-05-16 11:51:45,434 - INFO - ==>>  Image row deleted from the database:: 60343e6929c98f9abd15606d10f7f6be,165c44a2f0d88258c9b747845891d25e,40448e037aad7216cb4546ccb11c2e18,700ed7972149bade63d5899660daee82,0033c538ff8d24babfbae3d61a206e71,600fa0567dd84cfbe2f5019bdb6a51f3,d471c066c6c9c73be12d72f89166bf5f,9bd163e8d6bfbb9d96b9ec900cd5ea88,932f6b0089374234ed6d18551bd9b3b4,0fecc40be579423ff951727e4322384e
+2025-05-16 11:51:45,437 - INFO - ==>> Video row deleted from the database: 2475887219421442,488245667405961,8245241038910346,962331729074763,1108455237036971,565878646287723,929170499386911,1132297188547376,1609641849918032,1116076663234706,889937079921268,580338254824117,615433444255864,1216513760184091,631833249248412,377333898775711
+2025-05-16 11:51:45,439 - INFO - Data Deleted, which was already in the database.
+ Campaign Id 120216689711760251,120216823666970251,120215447792810251,120216692028650251,120217586310730251,120215409957220251,120215176064660251,120216688729780251,120217591958640251,120216831247870251,120217582918990251,120217585154190251,120218078855600251,120216692202480251,120217094084000251,120215056319320251,120215447891490251,120215639563490251,120215639992450251,120216823856690251,120217092438530251,120217081288050251,120218078311890251,120216692838540251,120215385524780251,120216692870060251,120216690121580251,120216689487180251,120215448001750251,120216820892230251,120215455104400251
+2025-05-16 11:52:57,420 - INFO - Collected 95 unique campaigns, 113 unique adsets, 209 unique image assets (hashes) with initial data, 209 total unique image hashes, and 127 unique video assets (IDs).
+2025-05-16 11:56:02,725 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-16 11:56:02,726 - INFO - Updating availability for 81 carousel ads...
+2025-05-16 11:56:02,743 - INFO - Carousel ad availability updated and committed.
+2025-05-16 11:56:02,743 - INFO - Updated cron run status.
+2025-05-16 11:56:02,937 - ERROR - 
+--- Database insertion error for breakdown 'account' ---
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 500, in process_and_insert_insights
+    insert_cursor.executemany(insert_sql, rows_to_insert)
+psycopg2.errors.ForeignKeyViolation: insert or update on table "fact_ad_metrics_aggregated" violates foreign key constraint "fact_ad_metrics_aggregated_ad_id_fkey"
+DETAIL:  Key (ad_id)=(120218078311910251) is not present in table "dim_ad".
+
+
+2025-05-16 11:56:02,938 - INFO -   PostgreSQL Error Code: 23503
+2025-05-16 11:56:02,938 - INFO -   PostgreSQL Error Message: insert or update on table "fact_ad_metrics_aggregated" violates foreign key constraint "fact_ad_metrics_aggregated_ad_id_fkey"
+2025-05-16 11:56:02,938 - INFO -   PostgreSQL Constraint Name: fact_ad_metrics_aggregated_ad_id_fkey
+2025-05-16 11:56:02,938 - INFO - Sync completed for account id: 1632040980684380
+2025-05-16 12:23:13,878 - INFO - Syncing started with account id: 1632040980684380
+2025-05-16 12:23:58,444 - INFO - Sync completed for account id: 1632040980684380
+2025-05-16 16:58:27,413 - INFO - Syncing started with account id: 841473654502812
+2025-05-16 16:58:56,262 - ERROR - Error in delete 
+Exception Trace:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1812, in _execute_context
+    context = constructor(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 1447, in _init_compiled
+    expanded_state = compiled._process_parameters_for_postcompile(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 2114, in _process_parameters_for_postcompile
+    leep_res = self._literal_execute_expanding_parameter(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 3346, in _literal_execute_expanding_parameter
+    and isinstance(values[0], collections_abc.Sequence)
+                   ~~~~~~^^^
+TypeError: 'int' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 953, in delete_ad_and_creatives
+    ads = db.execute(
+          ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2260, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1818, in _execute_context
+    self._handle_dbapi_exception(
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1812, in _execute_context
+    context = constructor(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 1447, in _init_compiled
+    expanded_state = compiled._process_parameters_for_postcompile(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 2114, in _process_parameters_for_postcompile
+    leep_res = self._literal_execute_expanding_parameter(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sqlalchemy/sql/compiler.py", line 3346, in _literal_execute_expanding_parameter
+    and isinstance(values[0], collections_abc.Sequence)
+                   ~~~~~~^^^
+sqlalchemy.exc.StatementError: (builtins.TypeError) 'int' object is not subscriptable
+[SQL: 
+                    SELECT  adset_id, ad_id, video_id, image_hash, creative_type 
+                    FROM dim_ad WHERE ad_id NOT IN (__[POSTCOMPILE_ad_id]) AND account_id = (__[POSTCOMPILE_account_id])
+                    LIMIT 100 OFFSET %(offset)s;
+               ]
+[parameters: [{'ad_id': ['120222170753730625', '120217870394650625', '120222407755260625', '120222407546950625', '120216511898300625', '120222406924020625', '120214 ... (1955 characters truncated) ... 222689659190625', '120216687239090625', '120216153237970625', '120217670417940625', '120222408215060625'], 'account_id': 841473654502812, 'offset': 0}]]
+
+2025-05-16 16:58:56,263 - INFO - Sync completed for account id: 841473654502812
+2025-05-16 17:02:11,869 - INFO - Syncing started with account id: 841473654502812
+2025-05-16 17:02:39,276 - INFO - Sync completed for account id: 841473654502812
+2025-05-16 17:20:22,070 - INFO - Syncing started with account id: 841473654502812
+2025-05-16 17:21:11,338 - INFO - Collected 20 unique campaigns, 53 unique adsets, 47 unique image assets (hashes) with initial data, 47 total unique image hashes, and 69 unique video assets (IDs).
+2025-05-16 17:21:13,514 - INFO - Error processing campaign 120211959457350625: (psycopg2.errors.ForeignKeyViolation) insert or update on table "dim_campaign" violates foreign key constraint "dim_campaign_account_id_fkey"
+DETAIL:  Key (account_id)=(841473654502812) is not present in table "dim_account".
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211959457350625, 'account_id': 841473654502812, 'campaign_name': 'SC_Salon | Lead_Gen | BGLR | Remarketing | April’23', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-05-16 17:21:13,517 - INFO - Error processing campaign 120211959457330625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211959457330625, 'account_id': 841473654502812, 'campaign_name': 'SC_Salon | Lead_Gen | BGLR | Spa | April’23', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,517 - INFO - Error processing campaign 120211959457310625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211959457310625, 'account_id': 841473654502812, 'campaign_name': 'SC_Salon | Lead_Gen | BGLR | Retargeting | March’23', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,518 - INFO - Error processing campaign 120211959457300625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211959457300625, 'account_id': 841473654502812, 'campaign_name': 'SC_Salon | Lead_Gen | BGLR | Hair Colour (W) | June’24', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,518 - INFO - Error processing campaign 120211851026990625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211851026990625, 'account_id': 841473654502812, 'campaign_name': "SC_Salon | LeadGen | Dehradun | Nails | Oct'24", 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,519 - INFO - Error processing campaign 120214448310080625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120214448310080625, 'account_id': 841473654502812, 'campaign_name': "SC_Salon | BGLR | Lead_Gen | Bridal | Feb'25", 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,519 - INFO - Error processing campaign 120211959457340625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211959457340625, 'account_id': 841473654502812, 'campaign_name': 'SC_Salon | Lead_Gen | BGLR | Facial | April’23', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,520 - INFO - Error processing campaign 120211936228110625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211936228110625, 'account_id': 841473654502812, 'campaign_name': 'SC_Salon | Lead_Gen | Mumbai  Retargeting & Remarketing | March’23', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,520 - INFO - Error processing campaign 120211851027010625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211851027010625, 'account_id': 841473654502812, 'campaign_name': "SC_Salon | Lead_Gen | Dehradun | Spa | Oct'24", 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,521 - INFO - Error processing campaign 120212375844410625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120212375844410625, 'account_id': 841473654502812, 'campaign_name': "SC_Salon | Chennai | Lead_Gen | Nov'24", 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,521 - INFO - Error processing campaign 120211959457360625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211959457360625, 'account_id': 841473654502812, 'campaign_name': 'SC_Salon | Lead_Gen | BGLR | Hair Colour (W) | July’24', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,522 - INFO - Error processing campaign 120211851027000625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211851027000625, 'account_id': 841473654502812, 'campaign_name': "SC_Salon | LeadGen | Dehradun | Skin | Oct'24", 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,522 - INFO - Error processing campaign 120211851026980625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211851026980625, 'account_id': 841473654502812, 'campaign_name': "SC_Salon | Lead_Gen | Dehradun | Hair | Oct'24", 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,523 - INFO - Error processing campaign 120212129058560625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120212129058560625, 'account_id': 841473654502812, 'campaign_name': 'SC_Salon | Lead_Gen | BGLR | New Audiences | Nov 16th', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,523 - INFO - Error processing campaign 120217631279630625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120217631279630625, 'account_id': 841473654502812, 'campaign_name': 'BC_Salon | Lead_Gen | Gurgoan Vatika', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,524 - INFO - Error processing campaign 120211881353640625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211881353640625, 'account_id': 841473654502812, 'campaign_name': 'BC_Salon | LeadGen | Gurgaon | Premium interest | GGN All Services', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,524 - INFO - Error processing campaign 120219749169710625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120219749169710625, 'account_id': 841473654502812, 'campaign_name': "SC_Salon | Lead_Gen | Best Performing Creative | April'25", 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,525 - INFO - Error processing campaign 120211959457320625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120211959457320625, 'account_id': 841473654502812, 'campaign_name': 'SC_Salon | Lead_Gen | BGLR | Web | Nov’23', 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,525 - INFO - Error processing campaign 120221029491910625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120221029491910625, 'account_id': 841473654502812, 'campaign_name': "SC_Salon_Hyderabad_Awareness_April '25", 'objective': 'OUTCOME_AWARENESS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,526 - INFO - Error processing campaign 120222529891140625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_campaign
+                    (campaign_id, account_id, campaign_name, objective, is_active)
+                    VALUES (%(campaign_id)s, %(account_id)s, %(campaign_name)s, %(objective)s, %(is_active)s)
+                    ON CONFLICT (campaign_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_name = EXCLUDED.campaign_name,
+                        objective = EXCLUDED.objective,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'campaign_id': 120222529891140625, 'account_id': 841473654502812, 'campaign_name': "SC_Salon | Hyderabad | Lead_Gen | May'25", 'objective': 'OUTCOME_LEADS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,526 - INFO - Error processing adset 120211959457720625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211959457720625, 'account_id': 841473654502812, 'campaign_id': 120211959457350625, 'adset_name': "Remarketing | Clinic Engaged Audience | Jan'24 |.", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,527 - INFO - Error processing adset 120211959457420625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211959457420625, 'account_id': 841473654502812, 'campaign_id': 120211959457330625, 'adset_name': "Spa | LA and DataBase | Old Creative | June'24 | .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,527 - INFO - Error processing adset 120211959457540625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211959457540625, 'account_id': 841473654502812, 'campaign_id': 120211959457310625, 'adset_name': "Retargeting | Existing | Creatives | Jan'24 | .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,528 - INFO - Error processing adset 120212072120170625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212072120170625, 'account_id': 841473654502812, 'campaign_id': 120211959457350625, 'adset_name': 'Remarketing | Interaction on ads - Customers | June’23 | .', 'result_type': 'LEAD_GENERATION', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,528 - INFO - Error processing adset 120212980104150625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212980104150625, 'account_id': 841473654502812, 'campaign_id': 120211959457330625, 'adset_name': "Spa | LA and DataBase LFF | Old Creative | June'24 | .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,529 - INFO - Error processing adset 120212980776540625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212980776540625, 'account_id': 841473654502812, 'campaign_id': 120211959457300625, 'adset_name': "Hair Colour LFF | LAL  | June'23 | .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,529 - INFO - Error processing adset 120212789668300625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212789668300625, 'account_id': 841473654502812, 'campaign_id': 120211851026990625, 'adset_name': "Nails_New Creatives_Jan'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,530 - INFO - Error processing adset 120214448310090625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120214448310090625, 'account_id': 841473654502812, 'campaign_id': 120214448310080625, 'adset_name': "SC_Salon | Lead_Gen | Bridal | Interest | Feb'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,530 - INFO - Error processing adset 120211959457430625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211959457430625, 'account_id': 841473654502812, 'campaign_id': 120211959457340625, 'adset_name': "Facial | LAL1% Facial Page Visitor Yeoubi Facials | July'24 | .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,531 - INFO - Error processing adset 120212979824840625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212979824840625, 'account_id': 841473654502812, 'campaign_id': 120211959457340625, 'adset_name': "Facial LFF | LAL1% Facial Page Visitor Yeoubi Facials | July'24 | .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,531 - INFO - Error processing adset 120214324191560625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120214324191560625, 'account_id': 841473654502812, 'campaign_id': 120211936228110625, 'adset_name': "Lookalike | New Creatives | Feb'25 | @Chembur", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,532 - INFO - Error processing adset 120211851027040625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211851027040625, 'account_id': 841473654502812, 'campaign_id': 120211851027010625, 'adset_name': "SC_Salon | Lead_Gen | Spa | Interest | Dehradun | Oct'24 .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,532 - INFO - Error processing adset 120212393835030625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212393835030625, 'account_id': 841473654502812, 'campaign_id': 120212375844410625, 'adset_name': 'Skin | Interest | 28112024 .', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,533 - INFO - Error processing adset 120211959457380625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211959457380625, 'account_id': 841473654502812, 'campaign_id': 120211959457360625, 'adset_name': "Hair Colour  | LAL | June'23 | .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,533 - INFO - Error processing adset 120211959457390625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211959457390625, 'account_id': 841473654502812, 'campaign_id': 120211959457300625, 'adset_name': 'Hair Colour | Interest Hair | Oct’23 | .', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,534 - INFO - Error processing adset 120212980894580625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212980894580625, 'account_id': 841473654502812, 'campaign_id': 120211959457360625, 'adset_name': "Hair Colour LFF | LAL1%  Botox Page Visitors | Jan'24 | .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,534 - INFO - Error processing adset 120212980354190625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212980354190625, 'account_id': 841473654502812, 'campaign_id': 120211959457350625, 'adset_name': 'Remarketing LFF | Interaction on ads - Customers | June’23 | .', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,535 - INFO - Error processing adset 120212980434140625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212980434140625, 'account_id': 841473654502812, 'campaign_id': 120211959457350625, 'adset_name': "Remarketing LFF | Clinic Engaged Audience | Jan'24 |.", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,536 - INFO - Error processing adset 120212789571500625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212789571500625, 'account_id': 841473654502812, 'campaign_id': 120211851027000625, 'adset_name': "Skin_New Creative_Jan'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,539 - INFO - Error processing adset 120211851027060625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211851027060625, 'account_id': 841473654502812, 'campaign_id': 120211851026980625, 'adset_name': "SC_Salon | Lead_Gen | Hair | Interest | Oct'24 .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,549 - INFO - Error processing adset 120211851027030625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211851027030625, 'account_id': 841473654502812, 'campaign_id': 120211851026990625, 'adset_name': 'Interest | Dehradun | Nails .', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,551 - INFO - Error processing adset 120212748449980625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212748449980625, 'account_id': 841473654502812, 'campaign_id': 120212129058560625, 'adset_name': "Lookalike (IN, 1%) - Customer list Nov'24_.", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,552 - INFO - Error processing adset 120213268017270625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120213268017270625, 'account_id': 841473654502812, 'campaign_id': 120211959457360625, 'adset_name': "Hair | New Creative | Jan'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,559 - INFO - Error processing adset 120217632357190625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120217632357190625, 'account_id': 841473654502812, 'campaign_id': 120217631279630625, 'adset_name': 'Hair | Vatika', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,560 - INFO - Error processing adset 120217633661360625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120217633661360625, 'account_id': 841473654502812, 'campaign_id': 120217631279630625, 'adset_name': 'Skin | Vatika', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,561 - INFO - Error processing adset 120211881353670625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211881353670625, 'account_id': 841473654502812, 'campaign_id': 120211881353640625, 'adset_name': 'Interest | Gurgaon | All Services | @Gurgaon', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,563 - INFO - Error processing adset 120217633060920625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120217633060920625, 'account_id': 841473654502812, 'campaign_id': 120217631279630625, 'adset_name': 'All Services | Vatika', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,563 - INFO - Error processing adset 120217631279620625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120217631279620625, 'account_id': 841473654502812, 'campaign_id': 120217631279630625, 'adset_name': 'Nail | Vatika', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,564 - INFO - Error processing adset 120217670417930625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120217670417930625, 'account_id': 841473654502812, 'campaign_id': 120211881353640625, 'adset_name': 'Interest | Gurgaon | Nail | @Gurgaon', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,565 - INFO - Error processing adset 120217670519720625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120217670519720625, 'account_id': 841473654502812, 'campaign_id': 120211881353640625, 'adset_name': 'Interest | Gurgaon | Hair | @Gurgaon', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,565 - INFO - Error processing adset 120217672242960625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120217672242960625, 'account_id': 841473654502812, 'campaign_id': 120211881353640625, 'adset_name': 'Interest | Gurgaon | Skin | @Gurgaon', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,566 - INFO - Error processing adset 120213265079170625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120213265079170625, 'account_id': 841473654502812, 'campaign_id': 120211959457310625, 'adset_name': "Retargeting_New Creative_Jan'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,566 - INFO - Error processing adset 120211959457620625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211959457620625, 'account_id': 841473654502812, 'campaign_id': 120211959457360625, 'adset_name': 'Hair Colour | Interest Hair | Oct’23 | .', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,567 - INFO - Error processing adset 120212791913980625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212791913980625, 'account_id': 841473654502812, 'campaign_id': 120211959457310625, 'adset_name': "Retargeting | Existing | New Creatives | Jan'24 | .", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,567 - INFO - Error processing adset 120211851027020625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211851027020625, 'account_id': 841473654502812, 'campaign_id': 120211851027000625, 'adset_name': 'Interest Audiences | Skin .', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,568 - INFO - Error processing adset 120213264439210625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120213264439210625, 'account_id': 841473654502812, 'campaign_id': 120211959457330625, 'adset_name': "Spa_New Creative_Jan'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,568 - INFO - Error processing adset 120212789108370625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212789108370625, 'account_id': 841473654502812, 'campaign_id': 120211851027010625, 'adset_name': "New Creative _March'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,569 - INFO - Error processing adset 120213266521860625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120213266521860625, 'account_id': 841473654502812, 'campaign_id': 120211959457350625, 'adset_name': "Remarketing_New Creative_Jan'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,569 - INFO - Error processing adset 120212393727080625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212393727080625, 'account_id': 841473654502812, 'campaign_id': 120212375844410625, 'adset_name': 'Nails | Interest | 28112024 .', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,570 - INFO - Error processing adset 120219749830800625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120219749830800625, 'account_id': 841473654502812, 'campaign_id': 120219749169710625, 'adset_name': 'GGN | Performing Creatives', 'result_type': 'QUALITY_LEAD', 'is_active': False}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,570 - INFO - Error processing adset 120212816683080625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212816683080625, 'account_id': 841473654502812, 'campaign_id': 120212375844410625, 'adset_name': "New Creative | Interest | Feb'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,571 - INFO - Error processing adset 120219751260810625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120219751260810625, 'account_id': 841473654502812, 'campaign_id': 120219749169710625, 'adset_name': 'DDN | Performing Creatives', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,571 - INFO - Error processing adset 120212979942040625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212979942040625, 'account_id': 841473654502812, 'campaign_id': 120211959457320625, 'adset_name': 'SC_Salon LFF | Lead_Gen | Web | Nov’23', 'result_type': 'OFFSITE_CONVERSIONS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,572 - INFO - Error processing adset 120211959457760625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120211959457760625, 'account_id': 841473654502812, 'campaign_id': 120211959457320625, 'adset_name': 'SC_Salon | Lead_Gen | Web | Nov’23', 'result_type': 'OFFSITE_CONVERSIONS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,572 - INFO - Error processing adset 120221029491920625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120221029491920625, 'account_id': 841473654502812, 'campaign_id': 120221029491910625, 'adset_name': 'Hyderabad - Awareness', 'result_type': 'IMPRESSIONS', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,573 - INFO - Error processing adset 120212789776980625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212789776980625, 'account_id': 841473654502812, 'campaign_id': 120211851026980625, 'adset_name': "New creative | Interest | Feb'25", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,573 - INFO - Error processing adset 120214191148520625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120214191148520625, 'account_id': 841473654502812, 'campaign_id': 120211936228110625, 'adset_name': "Lookalike | New Creatives | Feb'25 | @Chembur", 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,573 - INFO - Error processing adset 120212392919480625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120212392919480625, 'account_id': 841473654502812, 'campaign_id': 120212375844410625, 'adset_name': 'Hair | Interest | 28112024 .', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,574 - INFO - Error processing adset 120222529892100625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120222529892100625, 'account_id': 841473654502812, 'campaign_id': 120222529891140625, 'adset_name': 'Hair | Interest_@Hyderabad', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,574 - INFO - Error processing adset 120222531306090625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120222531306090625, 'account_id': 841473654502812, 'campaign_id': 120222529891140625, 'adset_name': 'Spa | Interest_@Hyderabad', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,575 - INFO - Error processing adset 120222531494470625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120222531494470625, 'account_id': 841473654502812, 'campaign_id': 120222529891140625, 'adset_name': 'Skin | Interest_@Hyderabad', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,576 - INFO - Error processing adset 120222532167340625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120222532167340625, 'account_id': 841473654502812, 'campaign_id': 120222529891140625, 'adset_name': 'Nails | Interest_@Hyderabad', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,576 - INFO - Error processing adset 120222532706420625: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: 
+                    INSERT INTO dim_adset
+                    (adset_id, account_id, campaign_id, adset_name, result_type, is_active)
+                    VALUES (%(adset_id)s, %(account_id)s, %(campaign_id)s, %(adset_name)s, %(result_type)s, %(is_active)s)
+                    ON CONFLICT (adset_id)
+                    DO UPDATE SET
+                        account_id = EXCLUDED.account_id,
+                        campaign_id = EXCLUDED.campaign_id,
+                        adset_name = EXCLUDED.adset_name,
+                        result_type = EXCLUDED.result_type,
+                        is_active = EXCLUDED.is_active;
+                ]
+[parameters: {'adset_id': 120222532706420625, 'account_id': 841473654502812, 'campaign_id': 120222529891140625, 'adset_name': 'Offers - Elite Waitlist | Interest_@Hyderabad', 'result_type': 'QUALITY_LEAD', 'is_active': True}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,579 - INFO - Error running async process_video_creative for video 1456243939105449: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1456243939105449}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,579 - INFO - Error running async process_video_creative for video 542191614989000: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 542191614989000}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,580 - INFO - Error running async process_video_creative for video 733098388897363: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 733098388897363}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,581 - INFO - Error running async process_video_creative for video 432425929187652: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 432425929187652}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,581 - INFO - Error running async process_video_creative for video 1078948490638387: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1078948490638387}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,582 - INFO - Error running async process_video_creative for video 2040494123135873: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 2040494123135873}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,583 - INFO - Error running async process_video_creative for video 2377324522642393: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 2377324522642393}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,583 - INFO - Error running async process_video_creative for video 631051146410743: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 631051146410743}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,584 - INFO - Error running async process_video_creative for video 1979266619273069: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1979266619273069}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,585 - INFO - Error running async process_video_creative for video 2016436198766286: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 2016436198766286}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,585 - INFO - Error running async process_video_creative for video 1586830208673761: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1586830208673761}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,586 - INFO - Error running async process_video_creative for video 1353449845974524: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1353449845974524}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,586 - INFO - Error running async process_video_creative for video 1904942646908134: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1904942646908134}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,587 - INFO - Error running async process_video_creative for video 1014801950038083: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1014801950038083}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,587 - INFO - Error running async process_video_creative for video 447443755093130: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 447443755093130}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,588 - INFO - Error running async process_video_creative for video 1891849291566340: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1891849291566340}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,588 - INFO - Error running async process_video_creative for video 1321892775688229: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1321892775688229}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,589 - INFO - Error running async process_video_creative for video 1862236321227394: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1862236321227394}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,589 - INFO - Error running async process_video_creative for video 1385409315925723: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1385409315925723}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,590 - INFO - Error running async process_video_creative for video 1035519581778537: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1035519581778537}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,591 - INFO - Error running async process_video_creative for video 535046965993704: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 535046965993704}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,591 - INFO - Error running async process_video_creative for video 1379510933473281: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1379510933473281}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,592 - INFO - Error running async process_video_creative for video 685361487357031: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 685361487357031}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,592 - INFO - Error running async process_video_creative for video 9533449133415249: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 9533449133415249}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,593 - INFO - Error running async process_video_creative for video 1186320315927737: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1186320315927737}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,593 - INFO - Error running async process_video_creative for video 1182875766816012: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1182875766816012}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,594 - INFO - Error running async process_video_creative for video 1788655568360319: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1788655568360319}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,594 - INFO - Error running async process_video_creative for video 1755910958604366: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1755910958604366}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,595 - INFO - Error running async process_video_creative for video 3775486466034570: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 3775486466034570}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,596 - INFO - Error running async process_video_creative for video 1599834230714644: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1599834230714644}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,596 - INFO - Error running async process_video_creative for video 690559740122347: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 690559740122347}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,597 - INFO - Error running async process_video_creative for video 1227057862360340: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1227057862360340}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,597 - INFO - Error running async process_video_creative for video 1367814127863323: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1367814127863323}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,598 - INFO - Error running async process_video_creative for video 1594791594488149: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1594791594488149}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,598 - INFO - Error running async process_video_creative for video 1848193485723398: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1848193485723398}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,599 - INFO - Error running async process_video_creative for video 1048567597147789: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1048567597147789}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,600 - INFO - Error running async process_video_creative for video 701226782848920: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 701226782848920}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,600 - INFO - Error running async process_video_creative for video 1195425648470137: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1195425648470137}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,601 - INFO - Error running async process_video_creative for video 1357921192143008: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1357921192143008}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,601 - INFO - Error running async process_video_creative for video 929617449186134: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 929617449186134}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,602 - INFO - Error running async process_video_creative for video 631101716569834: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 631101716569834}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,602 - INFO - Error running async process_video_creative for video 1241424810655582: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1241424810655582}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,603 - INFO - Error running async process_video_creative for video 1423448742428080: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1423448742428080}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,603 - INFO - Error running async process_video_creative for video 719352403857426: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 719352403857426}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,604 - INFO - Error running async process_video_creative for video 1795763780986452: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1795763780986452}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,604 - INFO - Error running async process_video_creative for video 1054054669986834: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1054054669986834}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,605 - INFO - Error running async process_video_creative for video 737580295262620: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 737580295262620}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,606 - INFO - Error running async process_video_creative for video 684580310871290: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 684580310871290}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,606 - INFO - Error running async process_video_creative for video 1250021700012843: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1250021700012843}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,607 - INFO - Error running async process_video_creative for video 1139094964925391: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1139094964925391}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,607 - INFO - Error running async process_video_creative for video 1228341418852328: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1228341418852328}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,608 - INFO - Error running async process_video_creative for video 694831712954484: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 694831712954484}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,608 - INFO - Error running async process_video_creative for video 1091497402998083: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1091497402998083}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,609 - INFO - Error running async process_video_creative for video 2444375649282237: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 2444375649282237}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,609 - INFO - Error running async process_video_creative for video 553307907529992: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 553307907529992}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,610 - INFO - Error running async process_video_creative for video 572493419217953: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 572493419217953}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,611 - INFO - Error running async process_video_creative for video 1199153778888621: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1199153778888621}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,611 - INFO - Error running async process_video_creative for video 1925865431576446: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1925865431576446}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,612 - INFO - Error running async process_video_creative for video 2061750910999105: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 2061750910999105}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,612 - INFO - Error running async process_video_creative for video 8992999600801113: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 8992999600801113}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,613 - INFO - Error running async process_video_creative for video 1212418313858311: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1212418313858311}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,613 - INFO - Error running async process_video_creative for video 632406846625615: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 632406846625615}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,614 - INFO - Error running async process_video_creative for video 683093127650973: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 683093127650973}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,614 - INFO - Error running async process_video_creative for video 1022346476661691: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1022346476661691}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,615 - INFO - Error running async process_video_creative for video 1374108417132344: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1374108417132344}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,615 - INFO - Error running async process_video_creative for video 578412915279144: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 578412915279144}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,616 - INFO - Error running async process_video_creative for video 669846755955306: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 669846755955306}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,616 - INFO - Error running async process_video_creative for video 1026450435769130: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1026450435769130}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,617 - INFO - Error running async process_video_creative for video 1747872742817178: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: SELECT asset_link FROM dim_video_creative WHERE video_id = %(video_id)s]
+[parameters: {'video_id': 1747872742817178}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2025-05-16 17:21:13,644 - INFO - Errors occurred during initial dimension processing (Campaigns, Adsets, Images, Videos). Rolling back dimension updates.
+2025-05-16 17:21:13,818 - ERROR - 
+--- Database insertion error for breakdown 'account' ---
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 500, in process_and_insert_insights
+    insert_cursor.executemany(insert_sql, rows_to_insert)
+psycopg2.errors.ForeignKeyViolation: insert or update on table "fact_ad_metrics_aggregated" violates foreign key constraint "fact_ad_metrics_aggregated_ad_id_fkey"
+DETAIL:  Key (ad_id)=(120211959458520625) is not present in table "dim_ad".
+
+
+2025-05-16 17:21:13,819 - INFO -   PostgreSQL Error Code: 23503
+2025-05-16 17:21:13,819 - INFO -   PostgreSQL Error Message: insert or update on table "fact_ad_metrics_aggregated" violates foreign key constraint "fact_ad_metrics_aggregated_ad_id_fkey"
+2025-05-16 17:21:13,820 - INFO -   PostgreSQL Constraint Name: fact_ad_metrics_aggregated_ad_id_fkey
+2025-05-16 17:21:13,820 - INFO - Sync completed for account id: 841473654502812
+2025-05-16 17:32:58,651 - INFO - Syncing started with account id: 841473654502812
+2025-05-16 17:33:44,121 - INFO - Collected 20 unique campaigns, 53 unique adsets, 47 unique image assets (hashes) with initial data, 47 total unique image hashes, and 69 unique video assets (IDs).
+2025-05-16 18:27:44,617 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-16 18:27:44,618 - INFO - Updating availability for 5 carousel ads...
+2025-05-16 18:27:44,622 - INFO - Carousel ad availability updated and committed.
+2025-05-16 18:27:44,625 - INFO - Updated cron run status.
+2025-05-16 18:27:44,869 - INFO - Successfully inserted/updated 195 rows for breakdown 'account'.
+2025-05-16 18:27:44,869 - INFO - Sync completed for account id: 841473654502812
+2025-05-16 19:26:26,535 - INFO - Syncing started with account id: 841473654502812
+2025-05-16 19:27:12,780 - INFO - Collected 20 unique campaigns, 53 unique adsets, 47 unique image assets (hashes) with initial data, 47 total unique image hashes, and 69 unique video assets (IDs).
+2025-05-16 19:27:14,962 - INFO - Sync completed for account id: 841473654502812
+2025-05-16 19:42:34,999 - INFO - Syncing started with account id: 841473654502812
+2025-05-16 19:43:22,952 - INFO - Collected 20 unique campaigns, 53 unique adsets, 47 unique image assets (hashes) with initial data, 47 total unique image hashes, and 69 unique video assets (IDs).
+2025-05-16 19:43:23,663 - INFO - Sync completed for account id: 841473654502812

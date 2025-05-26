@@ -1,0 +1,367 @@
+2025-05-15 11:01:35,742 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 11:01:57,649 - INFO - Data Deleted, which was already in the database.
+ Campaign Id 120221168453780251,120218543165800251,120218634550640251,120217155936610251,120217081288050251,120217088394050251,120217156483990251,120218625463040251,120220634470450251,120217092438530251,120217087141370251,120223168094790251,120221373421480251,120225406467170251,120217094084000251,120218622368240251
+2025-05-15 11:02:46,035 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 11:52:20,642 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 11:54:07,831 - ERROR - Error in delete 
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron/app/insights_async.py", line 940, in delete_ad_and_creatives
+    log_message(f"video_ids deleted from s3: {','.join(video_ids)}")
+                                              ^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, int found
+
+2025-05-15 11:54:15,504 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 11:55:05,195 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-15 11:55:05,340 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 11:55:05,341 - INFO - Updated cron run status.
+2025-05-15 11:55:05,342 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 11:55:05,342 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 12:14:27,466 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 12:14:50,496 - INFO - video_ids deleted from s3: 1358304325180884,1894048144755912,1894048144755912,1358304325180884,1358304325180884,1894048144755912,1358304325180884,1894048144755912,1358304325180884,1894048144755912,1358304325180884,1894048144755912,500189369630021
+2025-05-15 12:48:14,539 - INFO - Fatal error during update_ad_insights: 'int' object is not subscriptable
+2025-05-15 12:51:34,927 - INFO - Fatal error during update_ad_insights: 'int' object is not subscriptable
+2025-05-15 12:52:07,932 - INFO - Fatal error during update_ad_insights: 'int' object is not subscriptable
+2025-05-15 12:52:48,703 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 12:53:15,452 - INFO - video_ids deleted from s3: 1359071958467248,2170378873375633,460194083754316,460194083754316,2170378873375633,1669035557031945,960275586249665,623589017258239,960275586249665,623589017258239,1669035557031945,1067748375399653,1878267156274402,1324221302173763,660074650054541,1160221735400110,1318559069205645,996155292185053,652891724122823,1175100421065010,1192450226220636,1374531393579915,1342794940301067,1196448075226881
+2025-05-15 12:53:16,270 - INFO - image_hashes deleted from s3: 5352b74534bc30e1c58603083d3b7960,50cfdd37fbeaa96970458715345882de,5352b74534bc30e1c58603083d3b7960,50cfdd37fbeaa96970458715345882de,9ec0da7f53eb4876b6d0f694c7d46d41,5352b74534bc30e1c58603083d3b7960,5352b74534bc30e1c58603083d3b7960,9ec0da7f53eb4876b6d0f694c7d46d41,30f2a75e5577904afc766fa7489cec77,c7125eeb9cf1b8a6629b50fe3d1d1d48,1d9bcc689e8483006b2c3863ebbed202,1d9bcc689e8483006b2c3863ebbed202,c7125eeb9cf1b8a6629b50fe3d1d1d48
+2025-05-15 12:53:16,325 - INFO - ==>>  Image row deleted from the database:: 50cfdd37fbeaa96970458715345882de,c7125eeb9cf1b8a6629b50fe3d1d1d48,5352b74534bc30e1c58603083d3b7960,30f2a75e5577904afc766fa7489cec77,9ec0da7f53eb4876b6d0f694c7d46d41,1d9bcc689e8483006b2c3863ebbed202
+2025-05-15 12:53:16,329 - INFO - ==>> Video row deleted from the database: 960275586249665,1878267156274402,1324221302173763,1067748375399653,652891724122823,1669035557031945,1374531393579915,460194083754316,1318559069205645,660074650054541,1160221735400110,1359071958467248,2170378873375633,1175100421065010,1192450226220636,996155292185053,623589017258239
+2025-05-15 12:53:16,335 - INFO - Data Deleted, which was already in the database.
+ Campaign Id 120221168453780251,120221295770300251,120221152820240251,120219352035340251,120219354093470251,120219356539140251,120219644567350251,120221337612410251,120221335495940251,120221753177650251,120221373421480251,120223168094790251,120219353734540251,120221782454040251
+2025-05-15 12:53:23,295 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 12:54:07,583 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-15 12:54:07,732 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 12:54:07,734 - INFO - Updated cron run status.
+2025-05-15 12:54:07,735 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 12:54:07,735 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 13:11:19,895 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 13:11:52,171 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 13:11:58,879 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 13:12:42,902 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-15 13:12:42,981 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 13:12:42,982 - INFO - Updated cron run status.
+2025-05-15 13:12:42,982 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 13:12:42,982 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 13:15:14,107 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 13:15:35,698 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 13:15:42,698 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 13:16:26,181 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-15 13:16:26,252 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 13:16:26,252 - INFO - Updated cron run status.
+2025-05-15 13:16:26,253 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 13:16:26,253 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 13:18:08,788 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 13:18:28,227 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 13:18:36,509 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 13:19:29,754 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-15 13:19:29,846 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 13:19:29,847 - INFO - Updated cron run status.
+2025-05-15 13:19:29,848 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 13:19:29,848 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 13:27:51,161 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 13:28:11,907 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 13:28:19,689 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 13:29:01,663 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-15 13:29:01,802 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 13:29:01,804 - INFO - Updated cron run status.
+2025-05-15 13:29:01,804 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 13:29:01,805 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 13:32:11,862 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 13:32:55,377 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 13:33:02,671 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 13:33:58,855 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-15 13:33:58,945 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 13:33:58,946 - INFO - Updated cron run status.
+2025-05-15 13:33:58,946 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 13:33:58,947 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 17:32:20,050 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 17:32:47,176 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 17:32:56,364 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 17:33:42,476 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 17:33:42,477 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 17:33:42,484 - INFO - Carousel ad availability updated and committed.
+2025-05-15 17:33:42,484 - INFO - Critical error during ad/card/availability processing phase: cannot access local variable 'update_status_failed' where it is not associated with a value
+2025-05-15 17:33:42,484 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 17:33:42,485 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 17:59:04,816 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 17:59:24,729 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 17:59:32,824 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 18:00:14,529 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 18:00:14,531 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 18:00:14,537 - INFO - Carousel ad availability updated and committed.
+2025-05-15 18:00:14,537 - INFO - Critical error during ad/card/availability processing phase: cannot access local variable 'update_status_failed' where it is not associated with a value
+2025-05-15 18:00:14,537 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 18:00:14,537 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 18:05:04,272 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 18:05:25,415 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 18:05:33,808 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 18:06:03,521 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 18:06:03,522 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 18:06:03,530 - INFO - Carousel ad availability updated and committed.
+2025-05-15 18:06:03,531 - INFO - Updated cron run status.
+2025-05-15 18:06:03,532 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 18:06:03,532 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 18:10:53,022 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 18:11:15,589 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 18:11:25,834 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 18:12:15,880 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 18:12:15,882 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 18:12:15,895 - INFO - Carousel ad availability updated and committed.
+2025-05-15 18:12:15,897 - INFO - Updated cron run status.
+2025-05-15 18:12:15,898 - INFO - Found unknown creative type of ad 120221168453740251
+2025-05-15 18:12:15,898 - INFO - Found unknown creative type of ad 120221295770320251
+2025-05-15 18:12:15,899 - INFO - Found unknown creative type of ad 120221295770340251
+2025-05-15 18:12:15,899 - INFO - Found unknown creative type of ad 120221375611900251
+2025-05-15 18:12:15,900 - INFO - Found unknown creative type of ad 120221435404890251
+2025-05-15 18:12:15,901 - INFO - Found unknown creative type of ad 120221435634400251
+2025-05-15 18:12:15,901 - INFO - Found unknown creative type of ad 120221435761580251
+2025-05-15 18:12:15,901 - INFO - Found unknown creative type of ad 120221444362600251
+2025-05-15 18:12:15,902 - INFO - Found unknown creative type of ad 120221660807810251
+2025-05-15 18:12:15,902 - INFO - Found unknown creative type of ad 120221661563640251
+2025-05-15 18:12:15,903 - INFO - Found unknown creative type of ad 120221754364070251
+2025-05-15 18:12:15,903 - INFO - Found unknown creative type of ad 120221755728110251
+2025-05-15 18:12:15,904 - INFO - Found unknown creative type of ad 120221786528470251
+2025-05-15 18:12:15,904 - INFO - Found unknown creative type of ad 120221920531460251
+2025-05-15 18:12:15,905 - INFO - Found unknown creative type of ad 120222615483550251
+2025-05-15 18:12:15,905 - INFO - Found unknown creative type of ad 120222615483580251
+2025-05-15 18:12:15,906 - INFO - Found unknown creative type of ad 120222615483590251
+2025-05-15 18:12:15,906 - INFO - Found unknown creative type of ad 120222615483600251
+2025-05-15 18:12:15,907 - INFO - Found unknown creative type of ad 120222615483620251
+2025-05-15 18:12:15,907 - INFO - Found unknown creative type of ad 120222615954670251
+2025-05-15 18:12:15,908 - INFO - Found unknown creative type of ad 120222615954690251
+2025-05-15 18:12:15,908 - INFO - Found unknown creative type of ad 120222615954730251
+2025-05-15 18:12:15,908 - INFO - Found unknown creative type of ad 120222615954740251
+2025-05-15 18:12:15,909 - INFO - Found unknown creative type of ad 120222615954760251
+2025-05-15 18:12:15,909 - INFO - Found unknown creative type of ad 120222615954770251
+2025-05-15 18:12:15,910 - INFO - Found unknown creative type of ad 120222615954780251
+2025-05-15 18:12:15,910 - INFO - Found unknown creative type of ad 120222615954790251
+2025-05-15 18:12:15,911 - INFO - Found unknown creative type of ad 120222615954800251
+2025-05-15 18:12:15,911 - INFO - Found unknown creative type of ad 120222633572550251
+2025-05-15 18:12:15,911 - INFO - Found unknown creative type of ad 120222750534420251
+2025-05-15 18:12:15,912 - INFO - Found unknown creative type of ad 120222751366040251
+2025-05-15 18:12:15,912 - INFO - Found unknown creative type of ad 120222751675390251
+2025-05-15 18:12:15,913 - INFO - Found unknown creative type of ad 120222751675400251
+2025-05-15 18:12:15,913 - INFO - Found unknown creative type of ad 120222752023930251
+2025-05-15 18:12:15,913 - INFO - Found unknown creative type of ad 120222752244790251
+2025-05-15 18:12:15,914 - INFO - Found unknown creative type of ad 120222769682820251
+2025-05-15 18:12:15,914 - INFO - Found unknown creative type of ad 120222841256120251
+2025-05-15 18:12:15,915 - INFO - Found unknown creative type of ad 120222841794540251
+2025-05-15 18:12:15,915 - INFO - Found unknown creative type of ad 120222841813150251
+2025-05-15 18:12:15,915 - INFO - Found unknown creative type of ad 120222841813160251
+2025-05-15 18:12:15,916 - INFO - Found unknown creative type of ad 120221168453770251
+2025-05-15 18:12:15,916 - INFO - Found unknown creative type of ad 120221295770350251
+2025-05-15 18:12:15,917 - INFO - Found unknown creative type of ad 120221444144480251
+2025-05-15 18:12:15,917 - INFO - Found unknown creative type of ad 120221787660680251
+2025-05-15 18:12:15,917 - INFO - Found unknown creative type of ad 120221920579850251
+2025-05-15 18:12:15,918 - INFO - Found unknown creative type of ad 120221993488950251
+2025-05-15 18:12:15,918 - INFO - Found unknown creative type of ad 120221995419200251
+2025-05-15 18:12:15,918 - INFO - Found unknown creative type of ad 120222000217990251
+2025-05-15 18:12:15,919 - INFO - Found unknown creative type of ad 120222615954750251
+2025-05-15 18:12:15,919 - INFO - Found unknown creative type of ad 120222631948930251
+2025-05-15 18:12:15,919 - INFO - Found unknown creative type of ad 120222632305400251
+2025-05-15 18:12:15,920 - INFO - Found unknown creative type of ad 120222752123490251
+2025-05-15 18:12:15,920 - INFO - Found unknown creative type of ad 120222752244780251
+2025-05-15 18:12:15,920 - INFO - Found unknown creative type of ad 120222842096270251
+2025-05-15 18:12:15,921 - INFO - Found unknown creative type of ad 120222842096280251
+2025-05-15 18:12:15,921 - INFO - Found unknown creative type of ad 120222842096720251
+2025-05-15 18:12:15,921 - INFO - Found unknown creative type of ad 120222842096730251
+2025-05-15 18:12:15,922 - INFO - Found unknown creative type of ad 120223168094830251
+2025-05-15 18:12:15,922 - INFO - Found unknown creative type of ad 120223168094840251
+2025-05-15 18:12:15,922 - INFO - Found unknown creative type of ad 120223168094850251
+2025-05-15 18:12:15,923 - INFO - Found unknown creative type of ad 120223168094880251
+2025-05-15 18:12:15,923 - INFO - Found unknown creative type of ad 120223258395630251
+2025-05-15 18:12:15,923 - INFO - Found unknown creative type of ad 120223258458420251
+2025-05-15 18:12:15,924 - INFO - Found unknown creative type of ad 120223258458430251
+2025-05-15 18:12:15,924 - INFO - Found unknown creative type of ad 120223261589190251
+2025-05-15 18:12:15,924 - INFO - Found unknown creative type of ad 120223261589220251
+2025-05-15 18:12:15,925 - INFO - Found unknown creative type of ad 120223261589230251
+2025-05-15 18:12:15,925 - INFO - Found unknown creative type of ad 120223261589270251
+2025-05-15 18:12:15,925 - INFO - Found unknown creative type of ad 120223261589280251
+2025-05-15 18:12:15,926 - INFO - Found unknown creative type of ad 120223261823890251
+2025-05-15 18:12:15,926 - INFO - Found unknown creative type of ad 120223261823900251
+2025-05-15 18:12:15,926 - INFO - Found unknown creative type of ad 120223261823910251
+2025-05-15 18:12:15,927 - INFO - Found unknown creative type of ad 120223261823920251
+2025-05-15 18:12:15,927 - INFO - Found unknown creative type of ad 120223261823930251
+2025-05-15 18:12:15,927 - INFO - Found unknown creative type of ad 120223276721280251
+2025-05-15 18:12:15,928 - INFO - Found unknown creative type of ad 120224675851250251
+2025-05-15 18:12:15,928 - INFO - Found unknown creative type of ad 120224957700950251
+2025-05-15 18:12:15,928 - INFO - Found unknown creative type of ad 120224960911520251
+2025-05-15 18:12:15,929 - INFO - Found unknown creative type of ad 120224963626990251
+2025-05-15 18:12:15,929 - INFO - Found unknown creative type of ad 120224963989520251
+2025-05-15 18:12:15,929 - INFO - Found unknown creative type of ad 120221993815640251
+2025-05-15 18:12:15,929 - INFO - Found unknown creative type of ad 120224964177010251
+2025-05-15 18:12:15,930 - INFO - Found unknown creative type of ad 120225346165470251
+2025-05-15 18:12:15,930 - INFO - Found unknown creative type of ad 120225346835890251
+2025-05-15 18:12:15,930 - INFO - Found unknown creative type of ad 120225347010520251
+2025-05-15 18:12:15,931 - INFO - Found unknown creative type of ad 120225406467180251
+2025-05-15 18:12:15,931 - INFO - Found unknown creative type of ad 120225628001700251
+2025-05-15 18:12:15,931 - INFO - Found unknown creative type of ad 120225628001710251
+2025-05-15 18:12:15,932 - INFO - Found unknown creative type of ad 120225628001720251
+2025-05-15 18:12:15,932 - INFO - Found unknown creative type of ad 120225628001730251
+2025-05-15 18:12:15,932 - INFO - Found unknown creative type of ad 120225629136050251
+2025-05-15 18:12:15,932 - INFO - Found unknown creative type of ad 120225629136090251
+2025-05-15 18:12:15,933 - INFO - Found unknown creative type of ad 120225629136100251
+2025-05-15 18:12:15,933 - INFO - Found unknown creative type of ad 120225629136130251
+2025-05-15 18:12:15,933 - INFO - Found unknown creative type of ad 120225629136140251
+2025-05-15 18:12:15,934 - INFO - Found unknown creative type of ad 120225629136180251
+2025-05-15 18:12:15,934 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 18:12:15,934 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 18:16:42,523 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 18:17:10,058 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 18:17:17,417 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 18:18:17,676 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 18:18:17,677 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 18:18:17,695 - INFO - Carousel ad availability updated and committed.
+2025-05-15 18:18:17,697 - INFO - Updated cron run status.
+2025-05-15 18:18:17,699 - INFO - Found unknown creative type of ad 120221168453740251
+2025-05-15 18:18:17,700 - INFO - Found unknown creative type of ad 120221295770320251
+2025-05-15 18:18:17,701 - INFO - Found unknown creative type of ad 120221295770340251
+2025-05-15 18:18:17,703 - INFO - Found unknown creative type of ad 120221375611900251
+2025-05-15 18:18:17,703 - INFO - Found unknown creative type of ad 120221435404890251
+2025-05-15 18:18:17,704 - INFO - Found unknown creative type of ad 120221435634400251
+2025-05-15 18:18:17,705 - INFO - Found unknown creative type of ad 120221435761580251
+2025-05-15 18:18:17,706 - INFO - Found unknown creative type of ad 120221444362600251
+2025-05-15 18:18:17,707 - INFO - Found unknown creative type of ad 120221660807810251
+2025-05-15 18:18:17,708 - INFO - Found unknown creative type of ad 120221661563640251
+2025-05-15 18:18:17,709 - INFO - Found unknown creative type of ad 120221754364070251
+2025-05-15 18:18:17,711 - INFO - Found unknown creative type of ad 120221755728110251
+2025-05-15 18:18:17,711 - INFO - Found unknown creative type of ad 120221786528470251
+2025-05-15 18:18:17,712 - INFO - Found unknown creative type of ad 120221920531460251
+2025-05-15 18:18:17,713 - INFO - Found unknown creative type of ad 120222615483550251
+2025-05-15 18:18:17,715 - INFO - Found unknown creative type of ad 120222615483580251
+2025-05-15 18:18:17,716 - INFO - Found unknown creative type of ad 120222615483590251
+2025-05-15 18:18:17,717 - INFO - Found unknown creative type of ad 120222615483600251
+2025-05-15 18:18:17,717 - INFO - Found unknown creative type of ad 120222615483620251
+2025-05-15 18:18:17,718 - INFO - Found unknown creative type of ad 120222615954670251
+2025-05-15 18:18:17,719 - INFO - Found unknown creative type of ad 120222615954690251
+2025-05-15 18:18:17,720 - INFO - Found unknown creative type of ad 120222615954730251
+2025-05-15 18:18:17,721 - INFO - Found unknown creative type of ad 120222615954740251
+2025-05-15 18:18:17,722 - INFO - Found unknown creative type of ad 120222615954760251
+2025-05-15 18:18:17,722 - INFO - Found unknown creative type of ad 120222615954770251
+2025-05-15 18:18:17,723 - INFO - Found unknown creative type of ad 120222615954780251
+2025-05-15 18:18:17,724 - INFO - Found unknown creative type of ad 120222615954790251
+2025-05-15 18:18:17,724 - INFO - Found unknown creative type of ad 120222615954800251
+2025-05-15 18:18:17,725 - INFO - Found unknown creative type of ad 120222633572550251
+2025-05-15 18:18:17,726 - INFO - Found unknown creative type of ad 120222750534420251
+2025-05-15 18:18:17,727 - INFO - Found unknown creative type of ad 120222751366040251
+2025-05-15 18:18:17,727 - INFO - Found unknown creative type of ad 120222751675390251
+2025-05-15 18:18:17,728 - INFO - Found unknown creative type of ad 120222751675400251
+2025-05-15 18:18:17,729 - INFO - Found unknown creative type of ad 120222752023930251
+2025-05-15 18:18:17,730 - INFO - Found unknown creative type of ad 120222752244790251
+2025-05-15 18:18:17,730 - INFO - Found unknown creative type of ad 120222769682820251
+2025-05-15 18:18:17,731 - INFO - Found unknown creative type of ad 120222841256120251
+2025-05-15 18:18:17,732 - INFO - Found unknown creative type of ad 120222841794540251
+2025-05-15 18:18:17,733 - INFO - Found unknown creative type of ad 120222841813150251
+2025-05-15 18:18:17,734 - INFO - Found unknown creative type of ad 120222841813160251
+2025-05-15 18:18:17,734 - INFO - Found unknown creative type of ad 120221168453770251
+2025-05-15 18:18:17,735 - INFO - Found unknown creative type of ad 120221295770350251
+2025-05-15 18:18:17,735 - INFO - Found unknown creative type of ad 120221444144480251
+2025-05-15 18:18:17,736 - INFO - Found unknown creative type of ad 120221787660680251
+2025-05-15 18:18:17,736 - INFO - Found unknown creative type of ad 120221920579850251
+2025-05-15 18:18:17,736 - INFO - Found unknown creative type of ad 120221993488950251
+2025-05-15 18:18:17,737 - INFO - Found unknown creative type of ad 120221995419200251
+2025-05-15 18:18:17,737 - INFO - Found unknown creative type of ad 120222000217990251
+2025-05-15 18:18:17,738 - INFO - Found unknown creative type of ad 120222615954750251
+2025-05-15 18:18:17,739 - INFO - Found unknown creative type of ad 120222631948930251
+2025-05-15 18:18:17,739 - INFO - Found unknown creative type of ad 120222632305400251
+2025-05-15 18:18:17,739 - INFO - Found unknown creative type of ad 120222752123490251
+2025-05-15 18:18:17,740 - INFO - Found unknown creative type of ad 120222752244780251
+2025-05-15 18:18:17,740 - INFO - Found unknown creative type of ad 120222842096270251
+2025-05-15 18:18:17,741 - INFO - Found unknown creative type of ad 120222842096280251
+2025-05-15 18:18:17,741 - INFO - Found unknown creative type of ad 120222842096720251
+2025-05-15 18:18:17,742 - INFO - Found unknown creative type of ad 120222842096730251
+2025-05-15 18:18:17,743 - INFO - Found unknown creative type of ad 120223168094830251
+2025-05-15 18:18:17,743 - INFO - Found unknown creative type of ad 120223168094840251
+2025-05-15 18:18:17,744 - INFO - Found unknown creative type of ad 120223168094850251
+2025-05-15 18:18:17,744 - INFO - Found unknown creative type of ad 120223168094880251
+2025-05-15 18:18:17,744 - INFO - Found unknown creative type of ad 120223258395630251
+2025-05-15 18:18:17,745 - INFO - Found unknown creative type of ad 120223258458420251
+2025-05-15 18:18:17,745 - INFO - Found unknown creative type of ad 120223258458430251
+2025-05-15 18:18:17,746 - INFO - Found unknown creative type of ad 120223261589190251
+2025-05-15 18:18:17,746 - INFO - Found unknown creative type of ad 120223261589220251
+2025-05-15 18:18:17,747 - INFO - Found unknown creative type of ad 120223261589230251
+2025-05-15 18:18:17,748 - INFO - Found unknown creative type of ad 120223261589270251
+2025-05-15 18:18:17,748 - INFO - Found unknown creative type of ad 120223261589280251
+2025-05-15 18:18:17,749 - INFO - Found unknown creative type of ad 120223261823890251
+2025-05-15 18:18:17,749 - INFO - Found unknown creative type of ad 120223261823900251
+2025-05-15 18:18:17,750 - INFO - Found unknown creative type of ad 120223261823910251
+2025-05-15 18:18:17,750 - INFO - Found unknown creative type of ad 120223261823920251
+2025-05-15 18:18:17,751 - INFO - Found unknown creative type of ad 120223261823930251
+2025-05-15 18:18:17,751 - INFO - Found unknown creative type of ad 120223276721280251
+2025-05-15 18:18:17,751 - INFO - Found unknown creative type of ad 120224675851250251
+2025-05-15 18:18:17,753 - INFO - Found unknown creative type of ad 120224957700950251
+2025-05-15 18:18:17,753 - INFO - Found unknown creative type of ad 120224960911520251
+2025-05-15 18:18:17,754 - INFO - Found unknown creative type of ad 120224963626990251
+2025-05-15 18:18:17,755 - INFO - Found unknown creative type of ad 120224963989520251
+2025-05-15 18:18:17,755 - INFO - Found unknown creative type of ad 120221993815640251
+2025-05-15 18:18:17,756 - INFO - Found unknown creative type of ad 120224964177010251
+2025-05-15 18:18:17,756 - INFO - Found unknown creative type of ad 120225346165470251
+2025-05-15 18:18:17,757 - INFO - Found unknown creative type of ad 120225346835890251
+2025-05-15 18:18:17,757 - INFO - Found unknown creative type of ad 120225347010520251
+2025-05-15 18:18:17,758 - INFO - Found unknown creative type of ad 120225406467180251
+2025-05-15 18:18:17,758 - INFO - Found unknown creative type of ad 120225628001700251
+2025-05-15 18:18:17,758 - INFO - Found unknown creative type of ad 120225628001710251
+2025-05-15 18:18:17,759 - INFO - Found unknown creative type of ad 120225628001720251
+2025-05-15 18:18:17,759 - INFO - Found unknown creative type of ad 120225628001730251
+2025-05-15 18:18:17,760 - INFO - Found unknown creative type of ad 120225629136050251
+2025-05-15 18:18:17,760 - INFO - Found unknown creative type of ad 120225629136090251
+2025-05-15 18:18:17,761 - INFO - Found unknown creative type of ad 120225629136100251
+2025-05-15 18:18:17,761 - INFO - Found unknown creative type of ad 120225629136130251
+2025-05-15 18:18:17,762 - INFO - Found unknown creative type of ad 120225629136140251
+2025-05-15 18:18:17,762 - INFO - Found unknown creative type of ad 120225629136180251
+2025-05-15 18:18:17,762 - INFO - No valid rows to insert for breakdown 'account'.
+2025-05-15 18:18:17,763 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 18:42:22,956 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 18:42:49,549 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 18:42:59,413 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 18:43:48,451 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 18:43:48,452 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 18:43:48,457 - INFO - Carousel ad availability updated and committed.
+2025-05-15 18:43:48,458 - INFO - Updated cron run status.
+2025-05-15 18:43:48,485 - ERROR - 
+--- Database insertion error for breakdown 'account' ---
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 496, in process_and_insert_insights
+    insert_cursor = db_conn.cursor()
+                    ^^^^^^^^^^^^^^
+AttributeError: 'Session' object has no attribute 'cursor'
+
+2025-05-15 18:43:48,486 - INFO - Error while processing account 1632040980684380: cannot access local variable 'insert_cursor' where it is not associated with a value
+2025-05-15 18:59:46,002 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 19:00:17,116 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 19:00:25,261 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 19:01:03,148 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 19:01:03,149 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 19:01:03,162 - INFO - Carousel ad availability updated and committed.
+2025-05-15 19:01:03,163 - INFO - Updated cron run status.
+2025-05-15 19:01:03,390 - INFO - Successfully inserted/updated 96 rows for breakdown 'account'.
+2025-05-15 19:01:03,391 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 19:12:27,736 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 19:12:49,327 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 19:12:57,940 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 19:13:44,616 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 19:13:44,617 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 19:13:44,624 - INFO - Carousel ad availability updated and committed.
+2025-05-15 19:13:44,625 - INFO - Updated cron run status.
+2025-05-15 19:13:44,686 - INFO - Successfully inserted/updated 96 rows for breakdown 'account'.
+2025-05-15 19:13:44,686 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 19:19:24,700 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 19:19:44,493 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 19:19:53,038 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 19:20:19,719 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 19:20:19,719 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 19:20:19,726 - INFO - Carousel ad availability updated and committed.
+2025-05-15 19:20:19,726 - INFO - Updated cron run status.
+2025-05-15 19:20:19,764 - INFO - Successfully inserted/updated 96 rows for breakdown 'account'.
+2025-05-15 19:20:19,764 - INFO - Sync completed for account id: 1632040980684380
+2025-05-15 19:22:05,773 - INFO - Syncing started with account id: 1632040980684380
+2025-05-15 19:22:25,298 - INFO - video_ids deleted from s3: 1342794940301067,1196448075226881
+2025-05-15 19:22:32,984 - INFO - Collected 9 unique campaigns, 15 unique adsets, 58 unique image assets (hashes) with initial data, 58 total unique image hashes, and 14 unique video assets (IDs).
+2025-05-15 19:23:13,830 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-15 19:23:13,832 - INFO - Updating availability for 17 carousel ads...
+2025-05-15 19:23:13,856 - INFO - Carousel ad availability updated and committed.
+2025-05-15 19:23:13,860 - INFO - Updated cron run status.
+2025-05-15 19:23:13,957 - INFO - Successfully inserted/updated 96 rows for breakdown 'account'.
+2025-05-15 19:23:13,957 - INFO - Sync completed for account id: 1632040980684380

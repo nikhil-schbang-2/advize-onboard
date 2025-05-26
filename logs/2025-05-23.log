@@ -1,0 +1,241 @@
+2025-05-23 16:43:44,646 - INFO - Syncing started with account id: 841473654502812 for day 2
+2025-05-23 16:45:03,517 - INFO - Collected 2 unique campaigns, 3 unique adsets, 3 unique image assets (hashes) with initial data, 3 total unique image hashes, and 0 unique video assets (IDs).
+2025-05-23 16:45:09,650 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-23 16:45:09,651 - INFO - Critical error during ad/card/availability processing phase: 'NoneType' object has no attribute 'fetchone'
+2025-05-23 16:45:09,651 - INFO - Error while processing account 841473654502812: 'Database' object has no attribute 'close'
+2025-05-23 16:45:09,651 - INFO - Syncing started with account id: 841473654502812 for day 1
+2025-05-23 16:46:10,544 - ERROR - 
+--- Database insertion error for breakdown account
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 434, in process_and_insert_insights
+    db.bulk_execute_value(insert_sql, rows_to_insert)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Database' object has no attribute 'bulk_execute_value'. Did you mean: 'bulk_execute_values'?
+
+2025-05-23 16:46:10,548 - INFO - Sync completed for account id: 841473654502812
+2025-05-23 16:55:59,159 - INFO - Syncing started with account id: 841473654502812 for day 2
+2025-05-23 16:56:28,711 - INFO - Collected 2 unique campaigns, 3 unique adsets, 3 unique image assets (hashes) with initial data, 3 total unique image hashes, and 0 unique video assets (IDs).
+2025-05-23 16:56:31,538 - INFO - Successfully uploaded 3 images to S3.
+2025-05-23 16:56:31,539 - INFO - Started processing in database table dim_campaign
+2025-05-23 16:56:31,601 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-23 16:56:31,601 - INFO - Critical error during ad/card/availability processing phase: 'NoneType' object has no attribute 'fetchone'
+2025-05-23 16:56:31,602 - INFO - Error while processing account 841473654502812: 'Database' object has no attribute 'close'
+2025-05-23 16:56:31,602 - INFO - Syncing started with account id: 841473654502812 for day 1
+2025-05-23 16:57:14,752 - INFO - Successfully inserted/updated 3 rows for breakdown account.
+2025-05-23 16:57:14,753 - INFO - Sync completed for account id: 841473654502812
+2025-05-23 17:05:30,348 - INFO - Syncing started with account id: 841473654502812 for day 2
+2025-05-23 17:06:02,997 - INFO - Collected 2 unique campaigns, 3 unique adsets, 3 unique image assets (hashes) with initial data, 3 total unique image hashes, and 0 unique video assets (IDs).
+2025-05-23 17:06:05,299 - INFO - Successfully uploaded 3 images to S3.
+2025-05-23 17:06:05,299 - INFO - Started processing in database table dim_campaign
+2025-05-23 17:06:05,353 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-23 17:06:05,360 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-23 17:06:05,360 - INFO - Updating availability for 0 carousel ads...
+2025-05-23 17:06:05,360 - INFO - Carousel ad availability updated and committed.
+2025-05-23 17:06:05,363 - INFO - Updated cron run status.
+2025-05-23 17:06:05,363 - INFO - Error while processing account 841473654502812: 'Database' object has no attribute 'close'
+2025-05-23 17:06:05,363 - INFO - Syncing started with account id: 841473654502812 for day 1
+2025-05-23 17:06:30,878 - INFO - Successfully inserted/updated 3 rows for breakdown account.
+2025-05-23 17:06:30,879 - INFO - Sync completed for account id: 841473654502812
+2025-05-23 17:20:05,606 - INFO - Syncing started with account id: 841473654502812 for day 2
+2025-05-23 17:20:33,757 - INFO - Collected 2 unique campaigns, 3 unique adsets, 3 unique image assets (hashes) with initial data, 3 total unique image hashes, and 0 unique video assets (IDs).
+2025-05-23 17:20:38,418 - INFO - Successfully uploaded 3 images to S3.
+2025-05-23 17:20:38,419 - INFO - Started processing in database table dim_campaign
+2025-05-23 17:20:38,491 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-23 17:20:38,494 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-23 17:20:38,495 - INFO - Updating availability for 0 carousel ads...
+2025-05-23 17:20:38,495 - INFO - Carousel ad availability updated and committed.
+2025-05-23 17:20:38,496 - INFO - Updated cron run status.
+2025-05-23 17:20:38,498 - ERROR - Error processing insights row for Ad ID 120217636402920625
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 41, in execute
+    cur = self.conn.cursor(cursor_factory=RealDictCursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 139, in upsert_dimension
+    cursor = db.execute(select_sql, (name_value,))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 49, in execute
+    self.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 360, in process_and_insert_insights
+    upsert_dimension(
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 163, in upsert_dimension
+    db.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+2025-05-23 17:20:38,501 - INFO -   PostgreSQL Error Code: None
+2025-05-23 17:20:38,501 - INFO -   PostgreSQL Error Message: None
+2025-05-23 17:20:38,501 - ERROR - Error processing insights row for Ad ID 120217664567880625
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 41, in execute
+    cur = self.conn.cursor(cursor_factory=RealDictCursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 139, in upsert_dimension
+    cursor = db.execute(select_sql, (name_value,))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 49, in execute
+    self.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 360, in process_and_insert_insights
+    upsert_dimension(
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 163, in upsert_dimension
+    db.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+2025-05-23 17:20:38,503 - INFO -   PostgreSQL Error Code: None
+2025-05-23 17:20:38,504 - INFO -   PostgreSQL Error Message: None
+2025-05-23 17:20:38,504 - ERROR - Error processing insights row for Ad ID 120217667347860625
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 41, in execute
+    cur = self.conn.cursor(cursor_factory=RealDictCursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 139, in upsert_dimension
+    cursor = db.execute(select_sql, (name_value,))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 49, in execute
+    self.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 360, in process_and_insert_insights
+    upsert_dimension(
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 163, in upsert_dimension
+    db.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+2025-05-23 17:20:38,506 - INFO -   PostgreSQL Error Code: None
+2025-05-23 17:20:38,506 - INFO -   PostgreSQL Error Message: None
+2025-05-23 17:20:38,507 - INFO - No valid rows to insert for breakdown account.
+2025-05-23 17:20:38,507 - INFO - Sync completed for account id: 841473654502812
+2025-05-23 17:20:38,507 - INFO - Syncing started with account id: 841473654502812 for day 1
+2025-05-23 17:22:03,362 - ERROR - Error processing insights row for Ad ID 120214196147610625
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 41, in execute
+    cur = self.conn.cursor(cursor_factory=RealDictCursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 139, in upsert_dimension
+    cursor = db.execute(select_sql, (name_value,))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 49, in execute
+    self.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 360, in process_and_insert_insights
+    upsert_dimension(
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 163, in upsert_dimension
+    db.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+2025-05-23 17:22:03,366 - INFO -   PostgreSQL Error Code: None
+2025-05-23 17:22:03,367 - INFO -   PostgreSQL Error Message: None
+2025-05-23 17:22:03,367 - ERROR - Error processing insights row for Ad ID 120216511898300625
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 41, in execute
+    cur = self.conn.cursor(cursor_factory=RealDictCursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 139, in upsert_dimension
+    cursor = db.execute(select_sql, (name_value,))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 49, in execute
+    self.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 360, in process_and_insert_insights
+    upsert_dimension(
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 163, in upsert_dimension
+    db.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+2025-05-23 17:22:03,370 - INFO -   PostgreSQL Error Code: None
+2025-05-23 17:22:03,370 - INFO -   PostgreSQL Error Message: None
+2025-05-23 17:22:03,371 - ERROR - Error processing insights row for Ad ID 120217636402920625
+Exception Trace:
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 41, in execute
+    cur = self.conn.cursor(cursor_factory=RealDictCursor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 139, in upsert_dimension
+    cursor = db.execute(select_sql, (name_value,))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/database/db.py", line 49, in execute
+    self.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/insights_async.py", line 360, in process_and_insert_insights
+    upsert_dimension(
+  File "/Users/nikhilpandey/Documents/schbang_project/advize-Cron-onboard/app/fact_table.py", line 163, in upsert_dimension
+    db.conn.rollback()
+psycopg2.InterfaceError: connection already closed
+
+2025-05-23 17:22:03,373 - INFO -   PostgreSQL Error Code: None
+2025-05-23 17:22:03,373 - INFO -   PostgreSQL Error Message: None
+2025-05-23 17:22:03,373 - INFO - No valid rows to insert for breakdown account.
+2025-05-23 17:22:03,373 - INFO - Sync completed for account id: 841473654502812
+2025-05-23 17:25:14,335 - INFO - Syncing started with account id: 841473654502812 for day 2
+2025-05-23 17:26:14,285 - INFO - Collected 2 unique campaigns, 3 unique adsets, 3 unique image assets (hashes) with initial data, 3 total unique image hashes, and 0 unique video assets (IDs).
+2025-05-23 17:26:17,672 - INFO - Successfully uploaded 3 images to S3.
+2025-05-23 17:26:17,673 - INFO - Started processing in database table dim_campaign
+2025-05-23 17:26:17,725 - INFO - Dimension tables (Campaigns, Adsets, Images, Videos) processed and committed.
+2025-05-23 17:26:17,729 - INFO - Ads and Carousel Cards processed and committed.
+2025-05-23 17:26:17,730 - INFO - Updating availability for 0 carousel ads...
+2025-05-23 17:26:17,730 - INFO - Carousel ad availability updated and committed.
+2025-05-23 17:26:17,731 - INFO - Updated cron run status.
+2025-05-23 17:26:17,743 - INFO - Successfully inserted/updated 3 rows for breakdown account.
+2025-05-23 17:26:17,744 - INFO - Sync completed for account id: 841473654502812
+2025-05-23 17:26:17,744 - INFO - Syncing started with account id: 841473654502812 for day 1
+2025-05-23 17:28:20,016 - INFO - Successfully inserted/updated 3 rows for breakdown account.
+2025-05-23 17:28:20,018 - INFO - Sync completed for account id: 841473654502812

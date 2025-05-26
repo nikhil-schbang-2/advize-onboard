@@ -1,0 +1,9 @@
+venv
+.env
+**__pycache__**
+data/
+.idea
+celerybeat-schedule.db
+dump.rdb
+facebook_iframe.png
+.DS_Store
